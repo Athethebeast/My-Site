@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clicker | My Pixl Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="upcoming-projects.html">Upcoming Projects</a>
+      <a href="clicker.html" aria-current="page">Clicker</a>
+    </nav>
+  </header>
+  <main class="clicker">
+    <h1>Clicker</h1>
+    <p class="clicker-total">Total clicks: <output id="total-clicks" aria-live="polite">0</output></p>
+    <p class="clicker-rate"><output id="click-rate" aria-live="polite">0</output> cps</p>
+    <button id="click-button" class="click-button" type="button">Click me!</button>
+    <p id="clicker-status" class="clicker-status" role="status"></p>
+  </main>
+  <script src="clicker.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

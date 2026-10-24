@@ -7,14 +7,71 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Hi, welcome to my page! 👋</h1>
-    <p>I just joined Pixl and I'm learning how to code from scratch.</p>
-    <p>My goal: build cool stuff and to be able to code complex sites!</p>
-    <ul>
-      <li><a href="https://github.com" target="_blank">My GitHub</a></li>
-      <li><a href="https://pixl.hackclub.com" target="_blank">Pixl</a></li>
-    </ul>
-  </main>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="upcoming-projects.html">Upcoming Projects</a>
+      <a href="clicker.html">Clicker</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Light mode">
+        <span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-thumb"></span></span>
+        <span>Light mode</span>
+      </button>
+    </nav>
+  </header>
+  <div class="page-content">
+    <main id="home">
+      <h1>Hi, welcome to my page! 👋</h1>
+      <p>I just joined Pixl and I'm learning how to code from scratch.</p>
+      <p>My goal: build cool stuff and to be able to code complex sites!</p>
+      <p>Some hobbies of mine are gaming, reading and playing basketball.</p>
+      <section class="hobby-images" aria-label="My hobbies">
+        <figure>
+          <svg viewBox="0 0 100 100" role="img" aria-label="Illustration of a basketball">
+            <defs>
+              <clipPath id="basketball-shape">
+                <circle cx="50" cy="50" r="44"></circle>
+              </clipPath>
+            </defs>
+            <circle cx="50" cy="50" r="44" fill="#f28c28" stroke="#20242b" stroke-width="3"></circle>
+            <g clip-path="url(#basketball-shape)" fill="none" stroke="#20242b" stroke-width="4">
+              <path d="M50 4c-19 19-19 73 0 92"></path>
+              <path d="M50 4c19 19 19 73 0 92"></path>
+              <path d="M6 50h88"></path>
+              <path d="M11 27c17 12 61 12 78 0"></path>
+              <path d="M11 73c17-12 61-12 78 0"></path>
+            </g>
+          </svg>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 140 90" role="img" aria-label="Illustration of a Nintendo Switch">
+            <rect x="5" y="7" width="130" height="76" rx="19" fill="#252a33"></rect>
+            <rect x="10" y="12" width="24" height="66" rx="12" fill="#00a8dc"></rect>
+            <rect x="106" y="12" width="24" height="66" rx="12" fill="#e94354"></rect>
+            <rect x="37" y="14" width="66" height="62" rx="5" fill="#11151b" stroke="#555c68" stroke-width="2"></rect>
+            <circle cx="22" cy="34" r="5" fill="#d8e0eb"></circle>
+            <path d="M22 47v14M15 54h14" stroke="#d8e0eb" stroke-linecap="round" stroke-width="3"></path>
+            <circle cx="118" cy="31" r="2.5" fill="#f4f6f8"></circle>
+            <circle cx="124" cy="37" r="2.5" fill="#f4f6f8"></circle>
+            <circle cx="112" cy="37" r="2.5" fill="#f4f6f8"></circle>
+            <circle cx="118" cy="43" r="2.5" fill="#f4f6f8"></circle>
+            <circle cx="118" cy="61" r="4" fill="#d8e0eb"></circle>
+          </svg>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 100 100" role="img" aria-label="Illustration of an open book">
+            <path d="M8 22c15-5 29-2 42 7v56c-13-9-27-12-42-7V22Z" fill="#f3d36a" stroke="#20242b" stroke-linejoin="round" stroke-width="4"></path>
+            <path d="M92 22c-15-5-29-2-42 7v56c13-9 27-12 42-7V22Z" fill="#fff0b3" stroke="#20242b" stroke-linejoin="round" stroke-width="4"></path>
+            <path d="M17 35c9-2 17 0 25 4M17 46c9-2 17 0 25 4M17 57c9-2 17 0 25 4M83 35c-9-2-17 0-25 4M83 46c-9-2-17 0-25 4M83 57c-9-2-17 0-25 4" fill="none" stroke="#d49c42" stroke-linecap="round" stroke-width="3"></path>
+            <path d="M50 29v56" stroke="#20242b" stroke-width="3"></path>
+          </svg>
+        </figure>
+      </section>
+      <ul class="home-links">
+        <li><a href="https://github.com/Athethebeast" target="_blank" rel="noopener noreferrer">My GitHub</a></li>
+        <li><a href="https://pixl.hackclub.com" target="_blank" rel="noopener noreferrer">Pixl</a></li>
+      </ul>
+    </main>
+  </div>
+  <script src="theme.js"></script>
 </body>
 </html>
